@@ -128,7 +128,7 @@ footer p{
     font-size: 1.2em;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 320px) {
     nav ul li {
         display: block;
         margin: 10px 0;
