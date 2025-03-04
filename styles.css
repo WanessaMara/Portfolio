@@ -139,7 +139,13 @@ footer p{
     }
 
     .projeto {
-        width: 90px;
+        width: 100px;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .projeto h3 {
+        font-size: 1.4em;
     }
 
     header h1 {
