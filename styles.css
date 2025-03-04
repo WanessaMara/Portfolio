@@ -128,7 +128,7 @@ footer p{
     font-size: 1.2em;
 }
 
-@media (max-width: 745px) {
+@media (max-width: 650px) {
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -139,13 +139,20 @@ footer p{
     }
 
     .projeto {
-        width: 100px;
-        margin: 10px 0;
+        width: 90px;
+        max-width: 400px;
+        margin: 10px auto;
         box-sizing: border-box;
+        padding: 15px;
     }
 
     .projeto h3 {
         font-size: 1.4em;
+    }
+
+    .projeto p {
+        font-size: 1em;
+        word-wrap: break-word;
     }
 
     header h1 {
