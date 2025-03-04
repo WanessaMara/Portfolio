@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+
+header{
+    background: #197cee;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1{
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #ffcc00;
+}
+
+section {
+    padding: 40px, 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.projeto{
+    background: #fff;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.projeto h3{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.projeto p{
+    font-size: 1em;
+    color: #666;
+}
+
+.projeto a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #197cee;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.projeto a:hover{
+    background-color: #ffcc00;
+}
+
+a {
+    color: #197cee;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover{
+    color: #ffcc00;
+}
+
+section h2{
+    font-size: 2.2em;
+    margin: 15px;
+    color: #197cee;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #197cee;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .projeto {
+        width: 90px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
