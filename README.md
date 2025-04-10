@@ -17,4 +17,6 @@ Este é meu portfólio, onde apresento meus projetos e habilidades como desenvol
 
 ## 📸 Capturas de Telas
 
+![Preview do Portfólio](images/capturadotopo.png)
 
+![Preview do Portfólio](images/capturadosProjetos.png)
