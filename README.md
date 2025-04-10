@@ -2,7 +2,8 @@
 Este é meu portfólio, onde apresento meus projetos e habilidades como desenvolvedora. 
 
 ## 🌐 Demosntração
-Você pode visualizar o portfólio no site: [https://wanessamara.github.io/Portfolio/](https://wanessamara.github.io/Portfolio/)
+
+<a href="https://wanessamara.github.io/Portfolio/" target="_blank"> Clique aqui para ver o portfólio.</a>
 
 ## 🛠️ Tecnologias Usadas
 - **HTML5**: Estrutura da página
