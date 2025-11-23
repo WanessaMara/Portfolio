@@ -1,0 +1,137 @@
+.sobre-container{
+    padding: 40px 60px;
+    color: white;
+}
+
+/* SOBRE MIM */
+.sobre-mim{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.foto-sobre{
+    width: 180px;
+    height: 180px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.texto-sobre{
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* TITULO */
+.titulo-secao{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 4px solid #D0BE54;
+    padding-left: 12px;
+    font-size: 26px;
+}
+
+/* HABILIDADES GRID */
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.skill-item{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    gap: 6px;
+    flex-direction: column;
+}
+
+.skill-item span{
+    display: block;
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+.skill-item img{
+    width: 40px;
+    margin-bottom: 8px;
+}
+
+/* CERTIFICADOS */
+.certificados-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.certificado-card{
+    background: #0F1844;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.certificado-card img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.btn-cert{
+    display: inline-block;
+    margin-top: 10px;
+    background: #D0BE54;
+    color: black;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 8px 14px;
+    min-width: 120px;
+}
+
+/* CURRICULO */
+.curriculo-card{
+    background: #0F1844;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.curriculo-card img{
+    width: 40px;
+    margin-bottom: 8px;
+}
+
+.curriculo-card a{
+    color: #D0BE54;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+    .certificados-container,
+    .curriculos-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .certificado-item,
+    .curriculo-item {
+        width: 80%;
+    }
+}

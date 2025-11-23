@@ -1,0 +1,196 @@
+body{
+    background: linear-gradient(to left, #304CA8, #060B1B);
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    min-height: auto;
+}
+
+.menu{
+    color: #fff;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    top: 10px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+nav{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 100px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #D0BE54;
+}
+
+.menu ul li a.active {
+    font-weight: bold;
+    color: #D0BE54;
+}
+
+.icone img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0 20px;
+}
+
+.icone p{
+    margin: 0;
+    padding: 0 0;
+}
+
+.icone{
+    display: flex;
+    align-items: center;
+}
+
+.container-principal{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+
+}
+
+.perfil{
+    color: #fff;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 100px;
+}
+
+.perfil h5 {
+    margin-bottom: 15px;
+    text-align: justify;  
+}
+
+.foto-dev img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    margin: 100px;
+    margin: 100px 60px 100px 20px;
+
+}
+
+@media (max-width: 1366px) {
+
+    nav li a {
+        padding: 10px 40px;   
+    }
+
+    nav {
+        right: 10px;         
+    }
+
+    .container-principal {
+        padding: 20px 40px;   
+    }
+
+    .perfil {
+        margin: 50px;         
+        font-size: 18px;
+    }
+
+    .foto-dev img {
+        margin: 60px;        
+    }
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-principal {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .foto-dev img {
+        margin: 20px 0;
+    }
+
+    .perfil {
+        margin: 0;
+    }
+
+    .perfil h5 {
+        text-align: center;
+    }
+}
+
+/* Botão hamburguer escondido no desktop */
+.btn-mobile {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* Menu mobile fechado inicialmente */
+.menu-mobile {
+    display: none;
+    background: #060B1B;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    /* Esconder menu normal */
+    nav {
+        display: none !important;
+    }
+
+    /* Mostrar hambúrguer */
+    .btn-mobile {
+        display: block !important;
+    }
+}
+
+
+.menu-mobile.show {
+    display: block;
+}
+
+
