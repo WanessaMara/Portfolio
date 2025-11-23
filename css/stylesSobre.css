@@ -145,3 +145,94 @@
         width: 80%;
     }
 }
+
+@media (max-width: 768px) {
+
+    .sobre-container {
+        padding: 20px; 
+        text-align: center;
+    }
+
+    .sobre-mim {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .foto-sobre {
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+
+    .texto-sobre {
+        max-width: 90%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .texto-sobre p {
+        text-align: center;
+    }
+
+    .titulo-secao {
+        font-size: 22px;
+        margin: 20px 0 10px 0;
+        padding-left: 0;
+        border-left: none;
+        text-align: center;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 12px;
+    }
+
+    .certificados-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .certificado-card {
+        width: 85%;
+    }
+
+    .curriculo-card {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .sobre-container {
+        padding: 15px;
+    }
+
+    .foto-sobre {
+        width: 130px;
+        height: 130px;
+    }
+
+    .texto-sobre {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .titulo-secao {
+        font-size: 20px;
+    }
+
+    .skill-item img {
+        width: 35px;
+    }
+
+    .certificado-card {
+        padding: 14px;
+    }
+
+    .curriculo-card {
+        padding: 16px;
+    }
+}
