@@ -41,6 +41,11 @@
 
     </div>
 
-    <script src="js/menu.js"></script>    
+    <script src="js/menu.js"></script>
+    <script>
+        if (performance.navigation.type === 1) {
+            window.location.href = "index.html";
+        }
+    </script>    
 </body>
 </html>

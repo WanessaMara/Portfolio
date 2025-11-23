@@ -7,17 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("menu").innerHTML = html;
 
             // ---- MARCAR LINK ATIVO ----
-            const links = document.querySelectorAll("nav a");
-            const path = window.location.pathname;
+            const currentPage = window.location.pathname.split("/").pop();
+            const links = document.querySelectorAll("#menu nav a");
+
             links.forEach(link => {
-                if (link.getAttribute("href") === path) {
+                let linkPage = link.getAttribute("href");
+                if (linkPage === currentPage) {
                     link.classList.add("active");
                 }
             });
 
             // ---- MENU MOBILE ----
-            const btnMobile = document.getElementById("btn-mobile");
-            const menuMobile = document.getElementById("menu-mobile");
+            const btnMobile = document.querySelector("#menu #btn-mobile");
+            const menuMobile = document.querySelector("#menu #menu-mobile");
 
             if (btnMobile && menuMobile) {
                 btnMobile.addEventListener("click", () => {
