@@ -79,6 +79,11 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
+.certificado-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
 .certificado-card img{
     width: 50px;
     margin-bottom: 10px;
@@ -107,6 +112,11 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
+}
+
+.curriculo-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .curriculo-card img{

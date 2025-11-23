@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     fetch("menu.html")
-        .then(response => response.text())
+        .then(r => r.text())
         .then(html => {
 
-            // Insere o menu carregado
             document.getElementById("menu").innerHTML = html;
 
-            // === Marcar link ativo ===
             const currentPage = window.location.pathname.split("/").pop();
             const links = document.querySelectorAll("#menu a");
 
@@ -17,17 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
 
-            // === MENU MOBILE ===
+            // --- MENU MOBILE ---
             const btnMobile = document.querySelector("#menu #btn-mobile");
             const menuMobile = document.querySelector("#menu-mobile");
 
-            if (btnMobile) {
+            if (btnMobile && menuMobile) {
                 btnMobile.addEventListener("click", () => {
                     menuMobile.classList.toggle("show");
                 });
             }
 
-            // remove fade
             document.body.classList.add("loaded");
         });
 });

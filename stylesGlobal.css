@@ -158,7 +158,26 @@ body.loaded {
     }
 }
 
-/* Botão hamburguer escondido no desktop */
+.menu-mobile {
+    display: none;
+    background: #060B1B;
+    padding: 20px;
+}
+
+.menu-mobile.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav.menu-desktop {
+        display: none;
+    }
+
+    .btn-mobile {
+        display: block !important;
+    }
+}
+
 .btn-mobile {
     display: none;
     font-size: 32px;
@@ -169,28 +188,5 @@ body.loaded {
     right: 20px;
 }
 
-/* Menu mobile fechado inicialmente */
-.menu-mobile {
-    display: none;
-    background: #060B1B;
-    padding: 20px;
-}
-
-@media (max-width: 768px) {
-    /* Esconder menu normal */
-    nav {
-        display: none !important;
-    }
-
-    /* Mostrar hambúrguer */
-    .btn-mobile {
-        display: block !important;
-    }
-}
-
-
-.menu-mobile.show {
-    display: block;
-}
 
 
