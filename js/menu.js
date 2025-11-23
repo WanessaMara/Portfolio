@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("/html/menu.html")
+    fetch("menu.html")
         .then(response => response.text())
         .then(html => {
 
