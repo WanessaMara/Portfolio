@@ -8,15 +8,21 @@ Este é meu portfólio, onde apresento meus projetos e habilidades como desenvol
 > 💡 Dica: Clique com o botão direito e selecione “abrir em nova guia” para manter esta página aberta.
 
 ## 🛠️ Tecnologias Usadas
-- **HTML5**: Estrutura da página
+- **HTML5**: Estrutura das páginas
 - **CSS3**: Estilização e layout responsivo
+- **JAVASCRIPT**: Interatividade e manipulação do DOM
+- **GitHub Pages**: Hospedagem do potifólio
 
 ## 📂 Estrutura do Projeto
-- `index.html`: Página principal do projeto
-- `styles.css`: Arquivo de estilos para página
+![Preview da Estrutura do Projeto](images/estrutura-projeto.png)
 
 ## 📸 Capturas de Telas
 
-![Preview do Portfólio](images/capturadotopo.png)
+![Preview do Portfólio](images/tela-inicio.png)
 
-![Preview do Portfólio](images/capturadosProjetos.png)
+![Preview do Portfólio](images/tela-projeto.png)
+
+![Preview do Portfólio](images/tela-sobre.png)
+
+![Preview do Portfólio](images/tela-contatos.png)
+
