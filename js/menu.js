@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // --- LINK ATIVO ---
             let currentPage = window.location.pathname.split("/").pop();
-            if (currentPage === "" || currentPage === "/") {
+            if (currentPage === "" || currentPage.includes("Portfolio")) {
                 currentPage = "index.html";
             }
 

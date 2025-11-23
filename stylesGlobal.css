@@ -137,10 +137,7 @@ body.loaded {
     }
 }
 
-/* ==========================
-   MENU MOBILE (Inicialmente escondido)
-========================== */
-
+/* MENU MOBILE (Inicialmente escondido) */
 .menu-mobile {
     display: none;
     background: #060B1B;
@@ -184,24 +181,18 @@ body.loaded {
     right: 20px;
 }
 
-/* ==========================
-   MOBILE
-========================== */
-
+/* MOBILE */
 @media (max-width: 768px) {
 
-    /* Esconde menu desktop no mobile */
     nav.menu-desktop {
         display: none !important;
     }
 
-    /* Mostra botão hamburger */
     .btn-mobile {
         display: block !important;
         z-index: 999;
     }
 
-    /* Layout principal */
     .container-principal {
         flex-direction: column-reverse;
         text-align: center;
