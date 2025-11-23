@@ -1,8 +1,24 @@
-.projetos-container{
+.projetos-wrapper {
+    width: 100%;
+    padding: 0 60px; 
+    box-sizing: border-box;
+}
+
+.titulo-secao {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 4px solid #D0BE54;
+    padding-left: 12px;
+    font-size: 26px;
+    color: white;
+    font-weight: 600;
+}
+
+.projetos-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
-    padding: 40px 60px;
+    padding: 40px 0; 
 }
 
 .card-projeto{
@@ -86,4 +102,24 @@
 
 .btn-github:hover{
     background: #bfa441;
+}
+
+@media (max-width: 768px) {
+
+    .projetos-wrapper {
+        padding: 10px 20px;
+    }
+
+    .titulo-secao {
+        font-size: 22px;
+        border-left: 4px solid #D0BE54;
+        margin-top: 20px;
+        padding-left: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .titulo-secao {
+        font-size: 20px;
+    }
 }

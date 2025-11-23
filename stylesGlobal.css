@@ -86,12 +86,11 @@ nav a:hover{
 }
 
 .foto-dev img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50px;
     margin: 100px;
     margin: 100px 60px 100px 20px;
-
 }
 
 @media (max-width: 1366px) {
@@ -114,7 +113,7 @@ nav a:hover{
     }
 
     .foto-dev img {
-        margin: 60px;        
+        margin: 50px;        
     }
 }
 
@@ -139,16 +138,20 @@ body.loaded {
 
 /* MENU MOBILE (Inicialmente escondido) */
 .menu-mobile {
-    display: none;
     background: #060B1B;
-    padding: 20px;
     width: 100%;
     text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
 }
 
 .menu-mobile ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .menu-mobile li {
@@ -166,10 +169,11 @@ body.loaded {
 }
 
 .menu-mobile.show {
-    display: block;
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* Botão hambúrguer */
 .btn-mobile {
     display: none;
     font-size: 32px;
