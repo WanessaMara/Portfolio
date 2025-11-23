@@ -212,3 +212,46 @@ body.loaded {
         text-align: center;
     }
 }
+
+@media (max-width: 575px) {
+
+    .icone img {
+        width: 32px;
+        height: 32px;
+        padding: 0 10px;
+    }
+
+    .icone p {
+        font-size: 14px;
+    }
+
+    .btn-mobile {
+        font-size: 26px;
+        right: 15px;
+        top: 12px;
+    }
+
+    .menu-mobile a {
+        font-size: 16px;
+    }
+
+    .menu-mobile {
+        padding: 10px;
+    }
+
+    .container-principal {
+        padding: 10px;
+    }
+
+    .perfil {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .foto-dev img {
+        width: 150px;
+        height: 150px;
+        margin: 20px 0;
+    }
+}
+
