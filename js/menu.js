@@ -6,7 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             document.getElementById("menu").innerHTML = html;
 
-            const currentPage = window.location.pathname.split("/").pop();
+            // --- LINK ATIVO ---
+            let currentPage = window.location.pathname.split("/").pop();
+            if (currentPage === "" || currentPage === "/") {
+                currentPage = "index.html";
+            }
+
             const links = document.querySelectorAll("#menu a");
 
             links.forEach(link => {
@@ -17,7 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // --- MENU MOBILE ---
             const btnMobile = document.querySelector("#menu #btn-mobile");
-            const menuMobile = document.querySelector("#menu-mobile");
+            const menuMobile =
+                document.querySelector("#menu #menu-mobile") ||
+                document.querySelector("#menu-mobile");
 
             if (btnMobile && menuMobile) {
                 btnMobile.addEventListener("click", () => {

@@ -137,7 +137,71 @@ body.loaded {
     }
 }
 
+/* ==========================
+   MENU MOBILE (Inicialmente escondido)
+========================== */
+
+.menu-mobile {
+    display: none;
+    background: #060B1B;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-mobile li {
+    margin: 10px 0;
+}
+
+.menu-mobile a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-mobile a:hover {
+    color: #D0BE54;
+}
+
+.menu-mobile.show {
+    display: block;
+}
+
+/* Botão hambúrguer */
+.btn-mobile {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
 @media (max-width: 768px) {
+
+    /* Esconde menu desktop no mobile */
+    nav.menu-desktop {
+        display: none !important;
+    }
+
+    /* Mostra botão hamburger */
+    .btn-mobile {
+        display: block !important;
+        z-index: 999;
+    }
+
+    /* Layout principal */
     .container-principal {
         flex-direction: column-reverse;
         text-align: center;
@@ -157,36 +221,3 @@ body.loaded {
         text-align: center;
     }
 }
-
-.menu-mobile {
-    display: none;
-    background: #060B1B;
-    padding: 20px;
-}
-
-.menu-mobile.show {
-    display: block;
-}
-
-@media (max-width: 768px) {
-    nav.menu-desktop {
-        display: none;
-    }
-
-    .btn-mobile {
-        display: block !important;
-    }
-}
-
-.btn-mobile {
-    display: none;
-    font-size: 32px;
-    cursor: pointer;
-    color: white;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-}
-
-
-
