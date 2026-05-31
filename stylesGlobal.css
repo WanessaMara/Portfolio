@@ -73,6 +73,10 @@ nav a:hover{
 
 }
 
+.img-projeto-pequena{
+    width: 120px;
+}
+
 .perfil{
     color: #fff;
     font-size: 20px;
@@ -114,6 +118,10 @@ nav a:hover{
 
     .foto-dev img {
         margin: 50px;        
+    }
+
+    .card-projeto{
+        height: 90%;
     }
 }
 
@@ -258,4 +266,3 @@ body.loaded {
         margin: 20px 0;
     }
 }
-
